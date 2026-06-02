@@ -1,78 +1,520 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-    <title>Trabalho</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
+<link rel="stylesheet" href="style.css">
 
-    <div class="layout">
+<link rel="stylesheet"
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 
-            <nav class="navigation">
-                <ul class="navigation__list">
+<title>Trabalho</title>
 
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Home</a>
-                    </li>
+</head><body><div class="layout">
 
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Sobre</a>
-                    </li>
 
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Contato</a>
-                    </li>
 
-                </ul>
-            </nav>
+    <!-- Sidebar -->
 
-        </aside>
+    <aside class="sidebar">
 
-        <!-- Conteúdo principal -->
-        <main class="content">
 
-            <!-- Topo -->
-            <header class="content__header">
-                <div class="header_left">
-                    <h1>Dashboard</h1>
+
+        <nav class="navigation">
+
+            <ul class="navigation__list">
+
+
+
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link">DashBoard</a>
+
+                </li>
+
+
+
+                <li class="navigation__item">
+
+                    <a href="#" class="navigation__link">Informacoes</a>
+
+                </li>
+
+                
+
+
+
+
+
+            </ul>
+
+        </nav>
+
+
+
+    </aside>
+
+
+
+    <!-- Conteúdo principal -->
+
+    <main class="content">
+
+
+
+        <!-- Topo -->
+
+        <header class="content__header">
+
+            <div class="header_left">
+
+                <h1>Dashboard</h1>
+
+            </div>
+
+            <div class="header_right">
+
+                <div class="widget_search">
+
+                    <input type="text">
+
+                    <img src="svgs/search.svg" alt="icone_pesquisa">
+
                 </div>
-                <div class="header_right">
-                    <div class="widget_search">
-                        <input type="text">
-                        <img src="svgs/search.svg" alt="icone_pesquisa">
+
+                <img src="svgs/notification.svg" alt="icone_notificacao">
+
+                <div class="widget_user_pic"></div>
+
+
+
+            </div>
+
+        </header>
+
+
+
+        <!-- Widgets -->
+
+        <section class="widgets">
+
+
+
+            <div class="widget-card">
+
+                <div class="widget-card__content">
+
+                    <div class="top_content">
+
+                        <h1>Next game</h1>
+
+                        <h2>View calender</h2>
+
+
+
                     </div>
-                    <img src="svgs/notification.svg" alt="icone_notificacao">
-                    <div class="widget-user-pic"></div>
-                    
+
+                    <div class="info_content">
+
+                        <h2>Liga</h2>
+
+                        <h2>Horario/Dia</h2>
+
+                    </div>
+
+                    <div class="club_content">
+
+                        <div class="club_content__item">
+
+                            <img src="img/Arsenal_FC.svg.png" alt="icone_clube1">
+
+                            <h3>Arsenal</h3>
+
+                        </div>
+
+                        <h1>Vs</h1>
+
+                        <div class="club_content__item">
+
+                            <img src="img/Chelsea_FC.svg.png" alt="icone_clube2">
+
+                            <h3>Chelsea</h3>
+
+                        </div>
+
+                    </div>
+
                 </div>
-            </header>
 
-            <!-- Widgets -->
-            <section class="widgets">
+            </div>
 
-                <div class="widget-card">
-                    <div class="widget-card__content"></div>
+
+
+            <div class="widget-card">
+
+                <div class="widget-card__tabela_content">
+
+                    <div class="tabela_header">
+
+                        <h1>League table</h1>
+
+                        <h2>View all</h2>
+
+                    </div>
+
+                    <div class="tabela_content">
+
+                        <ul class="list_clubs">
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                            <li class="card_club">
+
+                                <h1>1</h1>
+
+                                <div class="club_img">
+
+                                    <img src="" alt="club_img">
+
+                                </div>
+
+                                <h2>Clube Name</h2>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                                <h3>0</h3>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
                 </div>
 
-                <div class="widget-card">
-                    <div class="widget-card__content"></div>
-                </div>
+            </div>
 
-            </section>
 
-        </main>
 
-    </div>
+        </section>
+
+
+
+    </main>
+
+
+
+</div>
 
 </body>
-
 </html>

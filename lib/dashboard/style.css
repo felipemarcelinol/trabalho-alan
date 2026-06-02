@@ -1,118 +1,411 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+*{
+
+margin: 0px;
+
+padding: 0px;
+
+box-sizing: border-box;
+
+text-decoration: none;
+
+list-style: none;
+
+font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+
+color: #2B3674;
+
 }
 
-/* Layout principal */
 .layout {
-    display: flex;
-    height: 100vh;
-    padding: 8px;
-    gap: 8px;
-    background-color: #f5f5f5;
+
+display: flex;
+
+width: 100%;
+
+height: 100vh;
+
+padding: 16px; /* Um respiro um pouco maior */
+
+gap: 16px;
+
+background-color: #25438a; /* Fundo mais moderno e suave */
+
 }
 
-/* Sidebar */
 .sidebar {
-    width: 300px;
-    background-color: #1e3a8a;
-    border-radius: 8px;
-    padding: 16px;
+
+width: 280px;
+
+background-color: #111c4425; /* Azul premium para a sidebar */
+
+border-radius: 16px;
+
+padding: 24px;
+
 }
 
-/* Navegação */
-.navigation__list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.navigation__item{
+
+display: flex;
+
+width: 100%;
+
+padding: 16px;
+
+border-radius: 12px;
+
+justify-content: center;
+
 }
 
 .navigation__link {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
+
+color: #A3AED0; 
+
+font-size: 16px;
+
+font-weight: 500;
+
+transition: 0.3s;
+
 }
 
-.navigation__link:hover {
-    opacity: 0.8;
+.navigation__item:hover {
+
+background-color: rgba(255, 255, 255, 0.1);
+
 }
 
-/* Conteúdo principal */
-.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.navigation__item:hover .navigation__link {
+
+color: #FFFFFF;
+
 }
 
-/* Header */
+.content{
+
+width: 100%;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 16px;
+
+}
+
 .content__header {
-    height: 60px;
-    background-color: #16a34a;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    gap: 8px;
+
+background-color: #FFFFFF;
+
+border-radius: 8px;
+
+display: flex;
+
+justify-content: space-between;
+
+padding: 8px 24px;
+
+gap: 16px;
+
 }
+
+.content__header h1 {
+
+font-size: 24px;
+
+color: #2B3674;
+
+}
+
 .header_right{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    gap: 8px;
+
+display: flex;
+
+align-items: center;
+
+gap: 16px;
+
 }
+
 .widget_search{
-    display: flex;
-    align-items: center;
-    position: relative;
+
+position: relative;
+
 }
-.widget_search input{
-    padding: 4px 8px;
-    border-radius: 4px;
-    border: none;
+
+.widget_search input {
+
+padding: 10px 16px;
+
+border-radius: 20px;
+
+border: 1px solid #E2E8F0;
+
+background-color: #F4F7FE;
+
+outline: none;
+
 }
+
 .widget_search img{
-    position: absolute;
-    right: 8px;
-}
-.widget-user-pic{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #000000;
+
+position: absolute;
+
+top: 8px;
+
+right: 16px;
+
 }
 
-/* Área dos widgets */
+.widget_user_pic{
+
+width: 40px;
+
+height: 40px;
+
+background-color: #E2E8F0; /* Fundo temporário para a foto do usuário */
+
+border-radius: 50%;
+
+}
+
 .widgets {
-    flex: 1;
-    display: flex;
-    gap: 16px;
-    padding: 8px;
-    background-color: #fbcfe8;
-    border-radius: 8px;
+
+flex: 1;
+
+display: flex;
+
+gap: 16px;
+
+padding: 0; /* Removido o background rosa */
+
+background-color: transparent;
+
 }
 
-/* Card */
+/* Cards */
+
 .widget-card {
-    flex: 1;
+
+display: flex;
+
+flex-direction: column;
+
+padding: 40px 24px;
+
+width: 100%;
+
+height: max-content;
+
+background-color: #FFFFFF;
+
+border-radius: 16px;
+
 }
 
-/* Conteúdo do card */
-.widget-card__content {
-    width: 100%;
-    height: 150px;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #6b7280;
+.widget-card__content{
+
+display: flex;
+
+flex-direction: column;
+
+gap: 16px;
+
+}
+
+.top_content{
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+}
+
+.info_content{
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 8px;
+
+}
+
+.top_content h1{
+
+font-size: 14px;
+
+font-weight: 500;
+
+}
+
+.top_content h2{
+
+font-size: 12px;
+
+font-weight: 600;
+
+}
+
+.info_content h2{
+
+font-size: 16px;
+
+font-weight: 400;
+
+}
+
+.club_content{
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-evenly;
+
+}
+
+.club_content__item {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+gap: 8px;
+
+padding:  8px 16px;
+
+border-radius: 16px;
+
+background-color: rgba(128, 128, 128, 0.242);
+
+}
+
+.club_content__item h3{
+
+font-size: 12px;
+
+font-weight: 500;
+
+}
+
+.club_content img{
+
+width: 40px;
+
+height: 40px;
+
+object-fit: contain;
+
+}
+
+.tabela_header {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+font-size: 14px;
+
+margin-bottom: 16px;
+
+color: #2B3674;
+
+}
+
+.list_clubs {
+
+width: 100%;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 8px;
+
+}
+
+.card_club {
+
+display: flex;
+
+align-items: center;
+
+padding: 12px;
+
+border-bottom: 1px solid #F4F7FE; /* Linha divisória sutil */
+
+}
+
+.card_club:hover {
+
+background-color: #F4F7FE;
+
+border-radius: 8px;
+
+}
+
+/* Aqui está o segredo da organização da tabela */
+
+.card_club h1 {
+
+font-size: 14px;
+
+width: 30px; /* Largura fixa para a posição da tabela */
+
+color: #A3AED0;
+
+}
+
+.card_club .club_img {
+
+width: 40px;
+
+height: 40px;
+
+background-color: #E2E8F0; /* Fundo temporário para o logo */
+
+border-radius: 50%;
+
+margin-right: 12px;
+
+}
+
+.card_club h2 {
+
+font-size: 14px;
+
+flex: 1; /* O nome do clube cresce para preencher o espaço livre */
+
+text-align: left;
+
+color: #2B3674;
+
+}
+
+.card_club h3 {
+
+font-size: 14px;
+
+width: 35px; /* Largura fixa para cada coluna de pontos/estatísticas */
+
+text-align: center;
+
+color: #64748b;
+
+font-weight: 500;
+
+}
+
+.widget-card__tabela_content{
+
 }
